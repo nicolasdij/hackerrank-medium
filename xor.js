@@ -13,8 +13,8 @@ function minOperations(n) {
     accumulator += steps * sign;
     sign = sign * (digit == 0 ? 1 : -1);
   }
+  
   return accumulator;
 }
 
-let N = 10000000000;
-console.log(`${N} | ${minOperations(N)}`);
+module.exports = { minOperations };
